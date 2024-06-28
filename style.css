@@ -10,51 +10,72 @@ html,body {
 .title {
     font-weight: bold;
     font-family: "Poppins", Arial;
-    font-size: large;
+    font-size: 2.4rem;
+    color: hsl(192, 100%, 9%);
 }
-.paaragraph {
-
+.paragraph {
+    font-family:"Poppins", Arial ;
+    font-size: 0.8rem;
+    color: hsl(192, 100%, 9%);
 }
 /* Começo */
+
 .logo {
     border: 1pt solid black;
     width: 100%;
-    height: 30%;
+    height: 9rem;
     display: flex;
-    
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
-.logo-imagem {
-    flex: 1;
+.logo img {
     margin-left: 3%;
-}
-.logo-imagem img {
-    
+    width: 20%;
 }
 .logo-botao {
-    flex: 3;
-    margin-right: 3%;
-    width: 100%;
-    height: 100%;
+    /* border: 1pt solid red; */
+    width: 9%;
+    height: 22%;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    border: 1pt solid red;
+    align-items: center;
+    margin-right: 3%;
 }
-.logo-botao a { 
-    width: 20%;
-    height: 2rem;
-    border-radius: 25px ;
+.logo-botao a {
     border: 1.5px solid hsl(321, 100%, 78%);
     color: hsl(321, 100%, 78%);
-    background-color: white;
+    text-decoration: none;
     box-sizing: border-box;
-    font-size: 18px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    border-radius: 13px;
+    transition-duration: 0.5s;
+}
+#try-it:hover {
+   transform: scale(1.1);
 }
 .inicio {
-    border: 1pt solid red;
+    border: 1pt solid red ;
     width: 100%;
-    height: 30rem;
+    height: 15rem;
+    display: flex;
+    
+    justify-content: center;
+}
+.inicio-text-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border: 1pt solid green;
+    width: 80%;
+    height: 60%;
+}
+.inicio-text-content-paragraph {
+    border: 1pt solid yellow;
+    width: 50%;
+    text-align: center;
 }
