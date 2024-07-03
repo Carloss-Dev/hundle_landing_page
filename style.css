@@ -33,37 +33,43 @@ html,body {
     width: 20%;
 }
 .logo-botao {
-    /* border: 1pt solid red; */
-    width: 9%;
-    height: 22%;
+    
+    width: 10%;
+    height: 23%;
     display: flex;
     align-items: center;
     margin-right: 3%;
 }
-.logo-botao a {
+.logo-botao button {
     border: 1.5px solid hsl(321, 100%, 78%);
     color: hsl(321, 100%, 78%);
-    text-decoration: none;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: white;
     width: 100%;
     height: 100%;
     font-size: 1rem;
     border-radius: 13px;
+    cursor: pointer;
     transition-duration: 0.5s;
 }
-#try-it:hover {
+.logo-botao button:hover {
    transform: scale(1.1);
+   background-color:  hsl(321, 100%, 78%);
+   color: white;
+   
+}
+.logo-botao a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
 }
 .inicio {
     border: 1pt solid red ;
     width: 100%;
     height: 15rem;
     display: flex;
-    
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 .inicio-text-content {
     display: flex;
@@ -79,3 +85,23 @@ html,body {
     width: 50%;
     text-align: center;
 }
+.inicio-botao {
+    width: 25%;
+    height: 20%;
+    border: 1px solid blue;
+}
+
+.inicio-botao button {
+    width: 100%;
+    height: 100%; 
+    border-radius: 25px ;
+    background-color: hsl(321, 100%, 78%) ;
+    border: none;
+    transition-duration: 0.5s;
+}
+
+.inicio-botao button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
